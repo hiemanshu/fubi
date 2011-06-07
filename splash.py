@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'splash.ui'
 #
-# Created: Sat Jun  4 10:18:15 2011
+# Created: Tue Jun  7 22:32:26 2011
 #      by: PyQt4 UI code generator 4.8.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -17,7 +17,7 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(802, 300)
+        MainWindow.resize(760, 282)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.verticalLayout_2 = QtGui.QVBoxLayout(self.centralwidget)
