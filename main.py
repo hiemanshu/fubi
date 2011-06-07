@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import last, wizard 
+import downloader, wizard 
 from PyQt4 import QtCore, QtGui
 import sys
 import os
