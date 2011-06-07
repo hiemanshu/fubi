@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'fubi_wizard.ui'
 #
-# Created: Wed Jun  8 01:11:16 2011
+# Created: Wed Jun  8 01:14:16 2011
 #      by: PyQt4 UI code generator 4.8.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -226,6 +226,7 @@ class Ui_Wizard(object):
         Wizard.addPage(self.wizardPage_3)
 
         self.retranslateUi(Wizard)
+        QtCore.QObject.connect(self.horizontalSlider, QtCore.SIGNAL(_fromUtf8("valueChanged(int)")), Wizard.updateLabel)
         QtCore.QMetaObject.connectSlotsByName(Wizard)
 
     def retranslateUi(self, Wizard):
@@ -245,7 +246,7 @@ class Ui_Wizard(object):
         self.label_19.setText(QtGui.QApplication.translate("Wizard", "Install Size", None, QtGui.QApplication.UnicodeUTF8))
         self.label_21.setText(QtGui.QApplication.translate("Wizard", "Root Password", None, QtGui.QApplication.UnicodeUTF8))
         self.label_22.setText(QtGui.QApplication.translate("Wizard", "Confirm root Password", None, QtGui.QApplication.UnicodeUTF8))
-        self.label_20.setText(QtGui.QApplication.translate("Wizard", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_20.setText(QtGui.QApplication.translate("Wizard", "4GiB", None, QtGui.QApplication.UnicodeUTF8))
         self.label_11.setText(QtGui.QApplication.translate("Wizard", "Fubi - Install Fedora inside windows", None, QtGui.QApplication.UnicodeUTF8))
         self.label_7.setText(QtGui.QApplication.translate("Wizard", "You are about to install Fedora 15 to your Hard Drive", None, QtGui.QApplication.UnicodeUTF8))
         self.label_5.setText(QtGui.QApplication.translate("Wizard", "1. Doing A ... Done", None, QtGui.QApplication.UnicodeUTF8))

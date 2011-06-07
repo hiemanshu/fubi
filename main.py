@@ -10,10 +10,13 @@ class Fubi(QtGui.QWizard):
         QtGui.QWidget.__init__(self, parent)
         self.ui = wizard.Ui_Wizard()
         self.ui.setupUi(self)
-        self.postSetup()
 
     def postSetup(self):
         print 'yeah Blah Blah'
+
+    def updateLabel(self, value):
+        text = "%sGiB" %value
+        self.ui.label_20.setText(text)
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
